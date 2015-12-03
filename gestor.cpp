@@ -31,10 +31,10 @@ void Gestor::iniciar()
 void Gestor::imprimirCabecera()
 {
     system("cls");
-    cout << "*********************************" << endl;
-    cout << "*  Calculadora polaca inversa  *" << endl;
-    cout << "*\t By: Edwardenis, Adonis & Dariel\t *" << endl;
-    cout << "********************************\n" << endl;
+    cout << "***********************************" << endl;
+    cout << "*  Calculadora polaca inversa     *" << endl;
+    cout << "* By: Edwardenis, Adonis & Dariel *" << endl;
+    cout << "***********************************\n" << endl;
 }
 
 void Gestor::imprimirMenu()
