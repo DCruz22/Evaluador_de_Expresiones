@@ -10,8 +10,11 @@
 	<stdlib.h>
 	<gestor.h>
 
-1449124177 c:\users\dariel\documents\c++\evaluador_de_expresiones\\gestor.h
+1449162718 c:\users\dariel\documents\c++\evaluador_de_expresiones\\gestor.h
+	"gestor.h"
 	"pila.h"
+	"arbol.h"
+	"string"
 
 1449123479 c:\users\dariel\documents\c++\evaluador_de_expresiones\\pila.h
 	"Elemento.h"
@@ -24,4 +27,82 @@
 
 1449123479 c:\users\dariel\documents\c++\evaluador_de_expresiones\pila.h
 	"Elemento.h"
+
+1449163892 source:c:\users\dariel\documents\c++\evaluador_de_expresiones\arbol.cpp
+	"arbol.h"
+	<iostream>
+	<stdlib.h>
+
+1449162742 c:\users\dariel\documents\c++\evaluador_de_expresiones\arbol.h
+	"string"
+	"nodo.h"
+
+1449163795 source:c:\users\dariel\documents\c++\evaluador_de_expresiones\gestor.cpp
+	<iostream>
+	<windows.h>
+	"gestor.h"
+	<sstream>
+
+1449162718 c:\users\dariel\documents\c++\evaluador_de_expresiones\gestor.h
+	"gestor.h"
+	"pila.h"
+	"arbol.h"
+	"string"
+
+1449162857 c:\users\dariel\documents\c++\evaluador_de_expresiones\nodo.h
+	"string"
+
+1449162742 c:\users\dariel\documents\c++\evaluador_de_expresiones\\arbol.h
+	"string"
+	"nodo.h"
+
+1449162857 c:\users\dariel\documents\c++\evaluador_de_expresiones\\nodo.h
+	"string"
+
+1449162895 source:c:\users\dariel\documents\c++\evaluador_de_expresiones\nodo.cpp
+	"nodo.h"
+
+1449163892 source:c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\arbol.cpp
+	"arbol.h"
+	<iostream>
+	<stdlib.h>
+
+1449162742 c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\arbol.h
+	"string"
+	"nodo.h"
+
+1449162857 c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\nodo.h
+	"string"
+
+1449124124 source:c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\elemento.cpp
+	"Elemento.h"
+
+1449124097 c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\elemento.h
+	<string>
+
+1449168000 source:c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\gestor.cpp
+	<iostream>
+	<windows.h>
+	"gestor.h"
+	<sstream>
+
+1449162718 c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\gestor.h
+	"gestor.h"
+	"pila.h"
+	"arbol.h"
+	"string"
+
+1449123479 c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\pila.h
+	"Elemento.h"
+
+1449124050 source:c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\main.cpp
+	<iostream>
+	<stdlib.h>
+	<gestor.h>
+
+1449162895 source:c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\nodo.cpp
+	"nodo.h"
+
+1449123429 source:c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\pila.cpp
+	"Pila.h"
 

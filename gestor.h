@@ -1,8 +1,9 @@
 #ifndef GESTOR_H
 #define GESTOR_H
-
+#include "gestor.h"
 #include "pila.h"
-
+#include "arbol.h"
+#include "string"
 class Gestor
 {
     public:
@@ -12,6 +13,9 @@ class Gestor
         void imprimirMenu();
         void regresarAlMenu();
         void ingresarExpresion();
+        Arbol* crearArbol(Pila* pila, std::string operador);
+        std::string toString(int numero);
+        int toInt(std::string numero);
         virtual ~Gestor();
     protected:
     private:

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <windows.h>
 #include "gestor.h"
+#include <sstream>
 
 using namespace std;
 
@@ -46,7 +47,6 @@ void Gestor::imprimirMenu()
 void Gestor::regresarAlMenu()
 {
     cout << "\n--Presione ENTER para regresar el menu principal--\n" << endl;
-    cin.ignore();
     cin.get();
     iniciar();
 }
@@ -54,50 +54,56 @@ void Gestor::regresarAlMenu()
 void Gestor::ingresarExpresion()
 {
         Pila* pila = new Pila();
-        string Operacion = "";
-        string Ele = "";
-        char Operador = '0';
-        int e1;
-        int e2;
-        int resultado = 0;
+        string expresion = "";
+        string digitos = "";
+        char operador = '0';
         cin.ignore();
         cout << "Ingrese una expresion" << endl;
-        getline(cin, Operacion);
-        for (int i = 0; i <= Operacion.size(); i++){
-            if(Operacion[i] == '+' || Operacion[i] == '-' || Operacion[i] == '*' || Operacion[i] == '/'){
-                Operador = Operacion[i];
-                e1 = pila->pop()->getNumero();
-                e2 = pila->pop()->getNumero();
-                switch(Operador){
-                case '+':{
-                    resultado = e1 + e2;
-                    break;
-                }
-                case '-':{
-                    resultado = e1 - e2;
-                    break;
-                }
-                case '*':{
-                    resultado = e1 * e2;
-                    break;
-                }
-                case '/':{
-                    resultado = e1 / e2;
-                    break;
-                }
-                }
+        getline(cin, expresion);
+        for (int i = 0; i <= expresion.size(); i++){
+            if(expresion[i] == '+' || expresion[i] == '-' || expresion[i] == '*' || expresion[i] == '/'){
+                operador = expresion[i];
+                string s(1, operador);
+                Arbol* arbol = crearArbol(pila, s);
+                pila -> push(new Elemento(arbol -> calcularResultado()));
             }
-            else if(Operacion[i] != ' '){
-                Ele += Operacion[i];
+            else if(expresion[i] != ' '){
+                digitos += expresion[i];
             }
-            else if(Operacion[i] == ' '){
-                Elemento* alala = new Elemento(atoi(Ele.c_str()));
-                Ele = "";
-                pila->push(alala);
+            else if(expresion[i] == ' ' && digitos != ""){
+                Elemento* numero = new Elemento(toInt(digitos));
+                digitos = "";
+                pila->push(numero);
             }
 
         }
-        cout << resultado << endl;
+        cout << "El resultado es: " << pila -> pop() -> getNumero() << endl;
+}
+
+Arbol* Gestor::crearArbol(Pila* pila, string operador)
+{
+    string primero = toString(pila -> pop() -> getNumero());
+    string segundo = toString(pila -> pop() -> getNumero());
+
+    Nodo* signo = new Nodo(operador);
+    Nodo* num1 = new Nodo(primero);
+    Nodo* num2 = new Nodo(segundo);
+
+    signo -> agregarHijo(num1);
+    signo -> agregarHijo(num2);
+
+    return new Arbol(signo);
+}
+
+int Gestor::toInt(std::string numero)
+{
+    return atoi(numero.c_str());
+}
+string Gestor::toString(int numero)
+{
+    stringstream convert;
+    convert << numero;
+    return convert.str();
 }
 
 Gestor::~Gestor()

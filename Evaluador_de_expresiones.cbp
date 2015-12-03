@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="C:/Users/Dariel/Documents/C++/Evaluador_de_expresiones/" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="C:/Users/Dariel/Documents/C++/Evaluador_de_expresiones/" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +34,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="arbol.cpp" />
+		<Unit filename="arbol.h" />
+		<Unit filename="elemento.cpp" />
+		<Unit filename="elemento.h" />
+		<Unit filename="gestor.cpp" />
+		<Unit filename="gestor.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="nodo.cpp" />
+		<Unit filename="nodo.h" />
+		<Unit filename="pila.cpp" />
+		<Unit filename="pila.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
