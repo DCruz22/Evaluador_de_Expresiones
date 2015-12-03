@@ -16,6 +16,7 @@ class Gestor
         Arbol* crearArbol(Pila* pila, std::string operador);
         std::string toString(int numero);
         int toInt(std::string numero);
+        void anadirElemento(Pila* pila, std::string digitos);
         virtual ~Gestor();
     protected:
     private:

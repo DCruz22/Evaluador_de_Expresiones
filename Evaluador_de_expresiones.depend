@@ -10,7 +10,7 @@
 	<stdlib.h>
 	<gestor.h>
 
-1449162718 c:\users\dariel\documents\c++\evaluador_de_expresiones\\gestor.h
+1449171974 c:\users\dariel\documents\c++\evaluador_de_expresiones\\gestor.h
 	"gestor.h"
 	"pila.h"
 	"arbol.h"
@@ -80,7 +80,7 @@
 1449124097 c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\elemento.h
 	<string>
 
-1449168000 source:c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\gestor.cpp
+1449171629 source:c:\users\dariel\appdata\roaming\local libraries\local documents\c++\evaluador_de_expresiones\gestor.cpp
 	<iostream>
 	<windows.h>
 	"gestor.h"

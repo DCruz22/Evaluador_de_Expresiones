@@ -62,6 +62,8 @@ void Gestor::ingresarExpresion()
         getline(cin, expresion);
         for (int i = 0; i <= expresion.size(); i++){
             if(expresion[i] == '+' || expresion[i] == '-' || expresion[i] == '*' || expresion[i] == '/'){
+                anadirElemento(pila, digitos);
+                digitos = "";
                 operador = expresion[i];
                 string s(1, operador);
                 Arbol* arbol = crearArbol(pila, s);
@@ -70,10 +72,9 @@ void Gestor::ingresarExpresion()
             else if(expresion[i] != ' '){
                 digitos += expresion[i];
             }
-            else if(expresion[i] == ' ' && digitos != ""){
-                Elemento* numero = new Elemento(toInt(digitos));
+            else if(expresion[i] == ' '){
+                anadirElemento(pila, digitos);
                 digitos = "";
-                pila->push(numero);
             }
 
         }
@@ -99,11 +100,19 @@ int Gestor::toInt(std::string numero)
 {
     return atoi(numero.c_str());
 }
+
 string Gestor::toString(int numero)
 {
     stringstream convert;
     convert << numero;
     return convert.str();
+}
+void Gestor::anadirElemento(Pila* pila, string digitos)
+{
+    if(digitos != ""){
+        Elemento* numero = new Elemento(toInt(digitos));
+        pila->push(numero);
+    }
 }
 
 Gestor::~Gestor()
