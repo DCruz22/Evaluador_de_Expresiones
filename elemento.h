@@ -13,7 +13,7 @@ class Elemento
         void setAnterior(Elemento* anterior);
     private:
         int numero;
-        Elemento* anterior = NULL;
+        Elemento* anterior;
 };
 
 #endif // ELEMENTO_H

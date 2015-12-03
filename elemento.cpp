@@ -2,7 +2,8 @@
 
 Elemento::Elemento(int numero)
 {
-    this->numero = numero;
+    this -> numero = numero;
+    this -> anterior = NULL;
 }
 
 Elemento::~Elemento()

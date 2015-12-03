@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1449124124 source:c:\users\dariel\documents\c++\evaluador_de_expresiones\elemento.cpp
+	"Elemento.h"
+
+1449124097 c:\users\dariel\documents\c++\evaluador_de_expresiones\elemento.h
+	<string>
+
+1449124050 source:c:\users\dariel\documents\c++\evaluador_de_expresiones\main.cpp
+	<iostream>
+	<stdlib.h>
+	<gestor.h>
+
+1449124177 c:\users\dariel\documents\c++\evaluador_de_expresiones\\gestor.h
+	"pila.h"
+
+1449123479 c:\users\dariel\documents\c++\evaluador_de_expresiones\\pila.h
+	"Elemento.h"
+
+1449124097 c:\users\dariel\documents\c++\evaluador_de_expresiones\\elemento.h
+	<string>
+
+1449123429 source:c:\users\dariel\documents\c++\evaluador_de_expresiones\pila.cpp
+	"Pila.h"
+
+1449123479 c:\users\dariel\documents\c++\evaluador_de_expresiones\pila.h
+	"Elemento.h"
+
